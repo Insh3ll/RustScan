@@ -20,14 +20,11 @@ jobs:
       run: pwd
     
     - name: ls
-      run: tree /home/runner/work/RustScan/RustScan/target -al
-    
-#     - name: tar
-#       run: tar -cvzf artifact.tgz server client
+      run: ls /home/runner/work/RustScan/RustScan/target/debug -al
       
-#     - name: Archive production artifacts
-#       uses: actions/upload-artifact@v1
-#       with:
-#           name: artifact.tgz
-#           path: /home/runner/work/CFProxy/CFProxy/artifact.tgz
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v1
+      with:
+          name: rustscan
+          path: /home/runner/work/RustScan/RustScan/target/debug/rustscan
       
