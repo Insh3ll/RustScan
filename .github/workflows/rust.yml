@@ -12,7 +12,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
     - name: Build
       run: cargo build --verbose
-    - name: Run tests
-      run: cargo test --verbose
+      
+    - name: pwd
+      run: pwd
+    
+    - name: ls
+      run: ls -al
+    
+#     - name: tar
+#       run: tar -cvzf artifact.tgz server client
+      
+#     - name: Archive production artifacts
+#       uses: actions/upload-artifact@v1
+#       with:
+#           name: artifact.tgz
+#           path: /home/runner/work/CFProxy/CFProxy/artifact.tgz
+      
