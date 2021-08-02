@@ -20,7 +20,7 @@ jobs:
       run: pwd
     
     - name: ls
-      run: ls /home/runner/work/RustScan/RustScan/target -al
+      run: tree /home/runner/work/RustScan/RustScan/target -al
     
 #     - name: tar
 #       run: tar -cvzf artifact.tgz server client
